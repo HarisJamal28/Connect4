@@ -1,0 +1,104 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+#Main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  min-width: 320px;
+}
+#Main #Results {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 40%;
+}
+#Main #Board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  min-width: 100%;
+  padding: 10px;
+}
+#Main #Board #Grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid blue;
+  padding: 10px;
+  box-shadow: 1px 1px 5px black;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 320px;
+  flex-direction: column;
+}
+#Main #Board #Grid #Rows {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#Main #Board #Grid #Rows article {
+  height: 50px;
+  width: 50px;
+  border-radius: 90px;
+  margin-bottom: 10px;
+  margin: 1px;
+}
+#Main #Board #Grid #Columns {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#Main #Board #Grid #Columns article {
+  height: 50px;
+  width: 50px;
+  border: 1px solid blue;
+  border-radius: 90px;
+  margin: 1px;
+}
+#Main #Scoreboard {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+#Main #Scoreboard aside {
+  text-align: center;
+  border: 1px solid black;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#Main #Scoreboard aside p {
+  margin: 5px;
+}
+
+.Empty {
+  background-color: white;
+}
+
+.P1 {
+  background-color: red;
+}
+
+.P2 {
+  background-color: yellow;
+}
+
+@media only screen and (max-width: 320px) {
+  #Rows article {
+    height: 20px;
+    width: 20px;
+  }
+  #Columns article {
+    height: 20px;
+    width: 20px;
+  }
+}/*# sourceMappingURL=styles.css.map */
