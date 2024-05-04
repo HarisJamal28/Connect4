@@ -44,6 +44,7 @@ rows.querySelectorAll('article').forEach(block=>{
 for(let i = 0; i<42; i++){
     let block = document.createElement('article');
     block.setAttribute('id',`${i+1}`);
+    // block.innerText = i+1
     block.classList.add('Empty');
     block.addEventListener('click',function(){
         console.log(this.id);
@@ -194,7 +195,7 @@ function checkWin(playerArr) {
         ['1', '9', '17', '25'], ['2', '10', '18', '26'], ['3', '11', '19', '27'], ['4', '12', '20', '28'],
         ['8', '16', '24', '32'], ['9', '17', '25', '33'], ['10', '18', '26', '34'], ['11', '19', '27', '35'],
         ['15', '23', '31', '39'], ['16', '24', '32', '40'], ['17', '25', '33', '41'], ['18', '26', '34', '42'],
-        ['22', '30', '38'], ['23', '31', '39'], ['24', '32', '40'], ['25', '33', '41']
+        ['22', '30', '38'], ['23', '31', '39'], ['24', '32', '40'], ['25', '33', '41'],['36','30','24','18'],['37','31','25','19']
     ];
 
     for (let combination of winningCombinations) {
